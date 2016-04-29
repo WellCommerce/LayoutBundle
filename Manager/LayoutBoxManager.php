@@ -10,10 +10,10 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\LayoutBundle\Manager\Front;
+namespace WellCommerce\Bundle\LayoutBundle\Manager;
 
 use WellCommerce\Bundle\CoreBundle\Controller\Box\BoxControllerInterface;
-use WellCommerce\Bundle\CoreBundle\Manager\Front\AbstractFrontManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 use WellCommerce\Bundle\LayoutBundle\Collection\LayoutBoxSettingsCollection;
 use WellCommerce\Bundle\LayoutBundle\Entity\LayoutBoxInterface;
 use WellCommerce\Bundle\LayoutBundle\Exception\LayoutBoxNotFoundException;
@@ -24,7 +24,7 @@ use WellCommerce\Bundle\LayoutBundle\Resolver\ServiceResolverInterface;
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class LayoutBoxManager extends AbstractFrontManager
+class LayoutBoxManager extends AbstractManager
 {
     /**
      * @var ServiceResolverInterface
